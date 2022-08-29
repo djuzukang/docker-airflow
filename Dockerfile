@@ -28,7 +28,6 @@ ENV LC_MESSAGES en_US.UTF-8
 # Disable noisy "Handling signal" log messages:
 # ENV GUNICORN_CMD_ARGS --log-level WARNING
 
-RUN pip install apache-airflow-backport-providers-google
 RUN set -ex \
     && buildDeps=' \
         freetds-dev \
