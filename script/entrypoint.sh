@@ -24,8 +24,11 @@ export \
   AIRFLOW__CORE__LOAD_EXAMPLES \
 
 # Install custom python package if requirements.txt is present
-if [ -e "/requirements.txt" ]; then
+if [ -e "requirements.txt" ]; then
     $(command -v pip) install --user -r /requirements.txt
+    echo hi
+    else
+    echo no
 fi
 
 wait_for_port() {
